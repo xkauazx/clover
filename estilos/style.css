@@ -160,7 +160,7 @@ height: 100%;
 #serviços{
     display: flex;
     align-items: center;
-    
+    display: none;
     flex-direction: column;
 
 }
