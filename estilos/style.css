@@ -157,17 +157,69 @@ height: 100%;
     height: auto;
    
 }
+
+#achievements{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+    margin: 100px;
+
+}
+#achievements > div{
+     width: 50%;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ 
+}
+#achievements > div > h1{
+ 
+    color: #1ae000;
+     font-size: 50px;
+ 
+}
+#achievements > div > h2{
+   
+    color: #030303;
+   
+     font-size: 25px;
+ 
+}
+#achievements > div > p{
+   
+    color: #525252;
+   
+     font-size: 17px;
+     margin-top: 20px;
+ 
+}
+#seletor-categorias{
+position: absolute;
+left: 85%;
+font-size: 15px;
+font-family: Arial, Helvetica, sans-serif;
+border: 1px solid rgb(156, 156, 156);
+border-radius: 6px;
+
+
+
+
+
+}
 #serviços{
     display: flex;
     align-items: center;
-    display: none;
+    display: ;
     flex-direction: column;
 
 }
 #title-disponiveis{
    
     font-family: Arial, Helvetica, sans-serif;
-    margin: 70px 0px 50px 0px;
+    margin: 70px 0px 30px 0px;
     text-shadow: 2px 2px 2px rgb(255, 255, 255);
 
 }
