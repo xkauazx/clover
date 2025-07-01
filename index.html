@@ -37,9 +37,11 @@
             <section id="sec-mii">
                 <img src="img/profissional.png" alt="">
             </section>
-
+            
         </div>
-
+<div style="display: flex; justify-content: center;">
+    <hr>
+</div>
 
 
 
@@ -47,24 +49,25 @@
             <div style="position: relative; width: 100%; text-align: center;">
                 <h1 id="title-disponiveis">Serviços Disponiveis</h1>
                 <select id="seletor-categorias">
-                    <option value="construcao">Construção Civil</option>
-                    <option value="limpeza">Reformas</option>
+                    <option value="construcao" selected>Construção Civil</option>
+                    <option value="reformas">Reformas</option>
                     <option value="eletrico">Serviços Elétricos</option>
                     <option value="hidraulicos">Serviços Hidráulicos</option>
                     <option value="segurança">Segurança e Acessórios</option>
                     <option value="limpeza"> Limpeza e Manutenção</option>
+                    <option value="montagem"> Montagem</option>
                     <option value="climatizacao"> Climatização</option>
                     <option value="gerais"> Serviços Gerais</option>
                   
                 </select>
             </div>
-            <div style="display: flex; flex-direction: column;  padding: 50px;width: 100%;">
+            <div  class="categoria-container  serviço construcao"  style="display: flex; flex-direction: column;  padding: 50px;width: 100%;">
                 <h2
                     style="justify-content: flex-start; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0); margin-bottom: 30px; ">
                     Construção Civil</h2>
                 <div id="construção-civil" class="categoria" style="width: 100%;">
 
-                    <div class="serviço">
+                    <div class="serviçocss">
                         <a href="" style="text-decoration: none">
                             <img src="img/contruçãocasas.jpg" alt="">
                             <h1 style="padding: 5px;">Construção de casas</h1>
@@ -76,7 +79,7 @@
                             </p>
                         </a>
                     </div>
-                    <div class="serviço">
+                    <div class="serviçocss" >
                         <a href="" style="text-decoration: none">
                             <img src="img/room.jpg" alt="">
                             <h1 style="padding: 5px;">Ampliação de cômodos</h1>
@@ -95,11 +98,11 @@
 
             <!-- TODOS OS CARDS COMPLETOS -->
             <!-- REFORMAS -->
-            <div style="display: flex; flex-direction: column; padding: 50px; width: 100%;">
+            <div class="categoria-container serviço reformas" style="display: flex; flex-direction: column; padding: 50px; width: 100%;">
                 <h2 style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0); margin-bottom: 30px;">
                     Reformas</h2>
                 <div class="categoria" style="display: flex; flex-wrap: wrap; gap: 20px;">
-                    <div class="serviço">
+                    <div class="serviçocss">
                         <a href="formulario.html?servico=Reforma%20de%20Cômodos" style="text-decoration: none">
                             <img src="img/reforma.jpg" alt="reforma">
                             <h1>Reforma de Cômodos</h1>
@@ -113,7 +116,7 @@
                             </p>
                         </a>
                     </div>
-                    <div class="serviço">
+                    <div class="serviçocss">
                         <a href="formulario.html?servico=Troca%20de%20pisos" style="text-decoration: none;">
                             <img src="img/ceramica.jpg" alt="pisos">
                             <h1>Troca de pisos e revestimentos</h1>
@@ -125,7 +128,7 @@
 
                         </a>
                     </div>
-                    <div class="serviço"><a href="formulario.html?servico=Instalacao%20de%20gesso"
+                    <div class="serviçocss"><a href="formulario.html?servico=Instalacao%20de%20gesso"
                             style="text-decoration: none;">
                             <img src="img/gesso.jpg" alt="gesso">
                             <h1>Instalação de gesso/drywall</h1>
@@ -135,7 +138,7 @@
                                 (839 Avaliações)
                             </p>
                         </a></div>
-                    <div class="serviço"><a href="formulario.html?servico=Pintura" style="text-decoration: none;">
+                    <div class="serviçocss"><a href="formulario.html?servico=Pintura" style="text-decoration: none;">
                             <img src="img/pintura.jpg" alt="pintura">
                             <h1>Pintura interna e externa</h1>
                             <p><strong>R$ 20 – R$ 50/m²</strong></p>
@@ -148,11 +151,11 @@
             </div>
 
             <!-- ELÉTRICOS -->
-            <div style="display: flex; flex-direction: column; padding: 50px; width: 100%;">
+            <div class="categoria-container serviço eletrico" style="display: flex; flex-direction: column; padding: 50px; width: 100%;">
                 <h2 style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0); margin-bottom: 30px;">
                     Serviços Elétricos</h2>
                 <div class="categoria" style="display: flex; flex-wrap: wrap; gap: 20px;">
-                    <div class="serviço"><a href="formulario.html?servico=Tomadas" style="text-decoration: none;">
+                    <div class="serviçocss"><a href="formulario.html?servico=Tomadas" style="text-decoration: none;">
                             <img src="img/tomada.jpg" alt="tomadas">
                             <h1>Instalação de tomadas e interruptores</h1>
                             <p style="color:  rgb(46, 46, 46); font-size: 17px;"><strong>R$ 50 – R$ 150/unidade</strong>
@@ -162,7 +165,7 @@
                                 (2946 Avaliações)
                             </p>
                         </a></div>
-                    <div class="serviço"><a href="formulario.html?servico=Fiacao" style="text-decoration: none;">
+                    <div class="serviçocss"><a href="formulario.html?servico=Fiacao" style="text-decoration: none;">
                             <img src="img/fiacao.jpg" alt="fiação">
                             <h1>Troca de fiação antiga</h1>
                             <p style="color:  rgb(46, 46, 46); font-size: 17px;"><strong>R$ 80 – R$ 200/m²</strong></p>
@@ -171,7 +174,7 @@
                                 (371 Avaliações)
                             </p>
                         </a></div>
-                    <div class="serviço"><a href="formulario.html?servico=Ventiladores" style="text-decoration: none;">
+                    <div class="serviçocss"><a href="formulario.html?servico=Ventiladores" style="text-decoration: none;">
                             <img src="img/ventilador.jpg" alt="ventilador">
                             <h1>Instalação de ventiladores de teto</h1>
                             <p style="color:  rgb(46, 46, 46); font-size: 17px;"><strong>R$ 150 – R$
@@ -181,7 +184,7 @@
                                 (725 Avaliações)
                             </p>
                         </a></div>
-                    <div class="serviço"><a href="formulario.html?servico=Disjuntores" style="text-decoration: none;">
+                    <div class="serviçocss"><a href="formulario.html?servico=Disjuntores" style="text-decoration: none;">
                             <img src="img/disjuntor.jpg" alt="disjuntores">
                             <h1>Troca de disjuntores e quadros</h1>
                             <p style="color:  rgb(46, 46, 46); font-size: 17px;"><strong>R$ 200 – R$ 600</strong></p>
@@ -190,7 +193,7 @@
                                 (1806 Avaliações)
                             </p>
                         </a></div>
-                    <div class="serviço"><a href="formulario.html?servico=Iluminacao" style="text-decoration: none;">
+                    <div class="serviçocss"><a href="formulario.html?servico=Iluminacao" style="text-decoration: none;">
                             <img src="img/led.jpg" alt="led">
                             <h1>Iluminação LED e automação</h1>
                             <p style="color:  rgb(46, 46, 46); font-size: 17px;"><strong>R$ 100 – R$ 300/peça</strong>
@@ -205,27 +208,27 @@
             </div>
 
             <!-- HIDRÁULICOS -->
-            <div style="display: flex; flex-direction: column; padding: 50px; width: 100%;">
+            <div class="categoria-container serviço hidraulicos" style="display: flex; flex-direction: column; padding: 50px; width: 100%;">
                 <h2 style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0); margin-bottom: 30px;">
                     Serviços Hidráulicos</h2>
                 <div class="categoria" style="display: flex; flex-wrap: wrap; gap: 20px;">
-                    <div class="serviço"><a href="formulario.html?servico=Vazamentos">
+                    <div class="serviçocss"><a href="formulario.html?servico=Vazamentos">
                             <h1>Conserto de vazamentos</h1>
                             <p><strong>R$ 200 – R$ 800</strong></p>
                         </a></div>
-                    <div class="serviço"><a href="formulario.html?servico=Pias">
+                    <div class="serviçocss"><a href="formulario.html?servico=Pias">
                             <h1>Instalação de pias, vasos e chuveiros</h1>
                             <p><strong>R$ 300 – R$ 800</strong></p>
                         </a></div>
-                    <div class="serviço"><a href="formulario.html?servico=Desentupimento">
+                    <div class="serviçocss"><a href="formulario.html?servico=Desentupimento">
                             <h1>Desentupimento de canos e ralos</h1>
                             <p><strong>R$ 150 – R$ 600</strong></p>
                         </a></div>
-                    <div class="serviço"><a href="formulario.html?servico=Torneiras">
+                    <div class="serviçocss"><a href="formulario.html?servico=Torneiras">
                             <h1>Troca de torneiras e registros</h1>
                             <p><strong>R$ 80 – R$ 300</strong></p>
                         </a></div>
-                    <div class="serviço"><a href="formulario.html?servico=CaixaAgua">
+                    <div class="serviçocss"><a href="formulario.html?servico=CaixaAgua">
                             <h1>Instalação de caixa d’água</h1>
                             <p><strong>R$ 400 – R$ 1.200</strong></p>
                         </a></div>
@@ -233,23 +236,23 @@
             </div>
 
             <!-- SEGURANÇA -->
-            <div style="display: flex; flex-direction: column; padding: 50px; width: 100%;">
+            <div class="categoria-container serviço segurança" style="display: flex; flex-direction: column; padding: 50px; width: 100%;">
                 <h2 style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0); margin-bottom: 30px;">
                     Segurança e Acessórios</h2>
                 <div class="categoria" style="display: flex; flex-wrap: wrap; gap: 20px;">
-                    <div class="serviço"><a href="formulario.html?servico=Cameras">
+                    <div class="serviçocss"><a href="formulario.html?servico=Cameras">
                             <h1>Instalação de câmeras de segurança</h1>
                             <p><strong>R$ 300 – R$ 1.000</strong></p>
                         </a></div>
-                    <div class="serviço"><a href="formulario.html?servico=Interfones">
+                    <div class="serviçocss"><a href="formulario.html?servico=Interfones">
                             <h1>Instalação de interfones e fechaduras</h1>
                             <p><strong>R$ 500 – R$ 1.500</strong></p>
                         </a></div>
-                    <div class="serviço"><a href="formulario.html?servico=Portoes">
+                    <div class="serviçocss"><a href="formulario.html?servico=Portoes">
                             <h1>Portões automáticos</h1>
                             <p><strong>R$ 2.000 – R$ 6.000</strong></p>
                         </a></div>
-                    <div class="serviço"><a href="formulario.html?servico=Sensores">
+                    <div class="serviçocss"><a href="formulario.html?servico=Sensores">
                             <h1>Sensores de presença</h1>
                             <p><strong>R$ 200 – R$ 600</strong></p>
                         </a></div>
@@ -257,23 +260,23 @@
             </div>
 
             <!-- LIMPEZA -->
-            <div style="display: flex; flex-direction: column; padding: 50px; width: 100%;">
+            <div class="categoria-container serviço limpeza" style="display: flex; flex-direction: column; padding: 50px; width: 100%;">
                 <h2 style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0); margin-bottom: 30px;">Limpeza
                     e Manutenção</h2>
                 <div class="categoria" style="display: flex; flex-wrap: wrap; gap: 20px;">
-                    <div class="serviço"><a href="formulario.html?servico=PosObra">
+                    <div class="serviçocss"><a href="formulario.html?servico=PosObra">
                             <h1>Limpeza pós-obra</h1>
                             <p><strong>R$ 10 – R$ 25/m²</strong></p>
                         </a></div>
-                    <div class="serviço"><a href="formulario.html?servico=CaixaDagua">
+                    <div class="serviçocss"><a href="formulario.html?servico=CaixaDagua">
                             <h1>Limpeza de caixas d’água</h1>
                             <p><strong>R$ 200 – R$ 500</strong></p>
                         </a></div>
-                    <div class="serviço"><a href="formulario.html?servico=Impermeabilizacao">
+                    <div class="serviçocss"><a href="formulario.html?servico=Impermeabilizacao">
                             <h1>Impermeabilização de lajes</h1>
                             <p><strong>R$ 30 – R$ 80/m²</strong></p>
                         </a></div>
-                    <div class="serviço"><a href="formulario.html?servico=Fachadas">
+                    <div class="serviçocss"><a href="formulario.html?servico=Fachadas">
                             <h1>Limpeza de fachadas e telhados</h1>
                             <p><strong>R$ 15 – R$ 40/m²</strong></p>
                         </a></div>
@@ -281,19 +284,19 @@
             </div>
 
             <!-- MONTAGEM -->
-            <div style="display: flex; flex-direction: column; padding: 50px; width: 100%;">
+            <div class="categoria-container serviço montagem " style="display: flex; flex-direction: column; padding: 50px; width: 100%;">
                 <h2 style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0); margin-bottom: 30px;">
                     Montagem e Instalação</h2>
                 <div class="categoria" style="display: flex; flex-wrap: wrap; gap: 20px;">
-                    <div class="serviço"><a href="formulario.html?servico=Moveis">
+                    <div class="serviçocss"><a href="formulario.html?servico=Moveis">
                             <h1>Montagem de móveis</h1>
                             <p><strong>R$ 150 – R$ 500</strong></p>
                         </a></div>
-                    <div class="serviço"><a href="formulario.html?servico=SuporteTV">
+                    <div class="serviçocss"><a href="formulario.html?servico=SuporteTV">
                             <h1>Instalação de suportes para TV</h1>
                             <p><strong>R$ 100 – R$ 400</strong></p>
                         </a></div>
-                    <div class="serviço"><a href="formulario.html?servico=Cortinas">
+                    <div class="serviçocss"><a href="formulario.html?servico=Cortinas">
                             <h1>Instalação de cortinas e persianas</h1>
                             <p><strong>R$ 200 – R$ 800</strong></p>
                         </a></div>
@@ -301,7 +304,7 @@
             </div>
 
             <!-- CLIMATIZAÇÃO -->
-            <div style="display: flex; flex-direction: column; padding: 50px; width: 100%;">
+            <div class="categoria-container serviço climatizacao" style="display: flex; flex-direction: column; padding: 50px; width: 100%;">
                 <h2 style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0); margin-bottom: 30px;">
                     Climatização</h2>
                 <div class="categoria" style="display: flex; flex-wrap: wrap; gap: 20px;">
@@ -317,7 +320,7 @@
             </div>
 
             <!-- SERVIÇOS GERAIS -->
-            <div style="display: flex; flex-direction: column; padding: 50px; width: 100%;">
+            <div class="categoria-container serviço gerais" style="display: flex; flex-direction: column; padding: 50px; width: 100%;">
                 <h2 style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0); margin-bottom: 30px;">
                     Serviços Gerais</h2>
                 <div class="categoria" style="display: flex; flex-wrap: wrap; gap: 20px;">
@@ -364,6 +367,7 @@
 
     </main>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
