@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
-body {}
+body {
+   
+}
 
 
 #header-index {
@@ -95,6 +97,7 @@ body {}
     justify-content: center;
     align-items: center;
     height: 100%;
+    margin-bottom: 150px;
 }
 
 #sec-mi {
@@ -124,7 +127,7 @@ body {}
 #sec-mi p {
     font-size: 25px;
     color: #555;
-    
+
 
 }
 
@@ -161,43 +164,53 @@ body {}
 
 
 #secpags {
-   margin: 100px 0px 100px 0px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 92%;
+    background-color: #ffffff75;
+    padding: 60px;
+    justify-content: center;
+    border-radius: 16px;
+    gap: 50px;
+    box-shadow: 1px 1px 6px rgb(212, 212, 212);
 
 
 }
 
 #introducaopags {
-     padding: 50px;
+   
     flex: 1;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 
-    
+
 
 }
-#introducaopags > h1{
+
+#introducaopags>h1 {
     margin-bottom: 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 28px;
     color: #000000;
-    
+
 }
-#introducaopags > p{
+
+#introducaopags>p {
     width: 100%;
     max-width: 600px;
     font-family: Arial, Helvetica, sans-serif;
     color: #000000;
     font-size: 18px;
-   text-align: justify;
+    text-align: justify;
 }
-#spantitlepags{
+
+#spantitlepags {
     color: #1ae000;
-    
+
 }
 
 #infopag {
@@ -227,14 +240,17 @@ body {}
     color: white;
 
 }
-.fa-money-check-dollar{
+
+.fa-money-check-dollar {
     font-size: 40px;
 }
-.fa-credit-card{
-     font-size: 30px;
+
+.fa-credit-card {
+    font-size: 30px;
 
 }
-.fa-bolt{
+
+.fa-bolt {
     font-size: 30px;
 }
 
@@ -311,7 +327,7 @@ body {}
 
 #seletor-categorias {
     position: absolute;
-    left: 83%;
+    left: 82%;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     border: 1px solid rgb(156, 156, 156);
@@ -327,7 +343,7 @@ body {}
 #serviços {
     display: flex;
     align-items: center;
- 
+
     flex-direction: column;
 
 }
@@ -335,7 +351,7 @@ body {}
 #title-disponiveis {
 
     font-family: Arial, Helvetica, sans-serif;
-    margin: 70px 0px 30px 0px;
+    margin: 70px 0px 100px 0px;
     text-shadow: 2px 2px 2px rgb(255, 255, 255);
 
 }
@@ -394,7 +410,7 @@ body {}
     justify-content: center;
 }
 
-.fa-star{
+.fa-star {
     color: #555;
     font-size: 13px;
 
