@@ -11,27 +11,7 @@ body {
 
 #header-index {
 
-    background:
-        /* Base metálica (gradiente de cinzas) */
-        linear-gradient(145deg,
-            rgba(230, 230, 230, 0.993) 0%,
-            rgba(85, 85, 85, 0.3) 20%,
-            rgba(85, 85, 85, 0.4) 40%,
-            rgba(85, 85, 85, 0.2) 60%,
-            rgba(230, 230, 230, 0.993) 0%,
-        ),
-        /* Reflexos de luz (simula brilho metálico) */
-        radial-gradient(circle at 30% 30%,
-            rgba(255, 255, 255, 0.8) 0%,
-            rgba(255, 255, 255, 0.1) 20%,
-            transparent 40%),
-        /* Sombra para profundidade */
-        radial-gradient(circle at 70% 70%,
-            rgba(0, 0, 0, 0.3) 0%,
-            transparent 30%),
-        /* Cor base com transparência (#55555534) */
-        rgba(85, 85, 85, 0.2);
-
+    background-color: rgb(255, 255, 255);
 
     box-shadow:
         0 4px 15px rgba(0, 0, 0, 0.2),
@@ -39,6 +19,9 @@ body {
         inset 0 1px 2px rgba(255, 255, 255, 0.3);
     /* Brilho interno */
     ;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 #nav-list {
@@ -414,4 +397,67 @@ body {
     color: #555;
     font-size: 13px;
 
+}
+#maps{
+    
+
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+   text-align: justify;
+    width: 92%;
+    background-color: #ffffff75;
+    padding: 60px;
+    justify-content: center;
+    border-radius: 16px;
+    gap: 50px;
+    box-shadow: 1px 1px 6px rgb(212, 212, 212);
+    
+}
+
+#mapstext >  div > h1{
+    font-size: 30px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.fa-location-dot{
+    font-size: 50px;
+    color: red;
+}
+#mapstext{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#mapsimg{
+    display: flex;
+    flex-direction: column;
+    flex: 2.5;
+    width: 100%;
+}
+#maps > div > img {
+
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-left: 200px;
+}
+.botao-orcamento {
+  padding: 10px 20px;
+  background-color: #e60000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-top: 50px;
+}
+
+.botao-orcamento:hover {
+  background-color: #c40000;
 }
