@@ -528,3 +528,50 @@ footer{
     text-decoration: none;
     color: #000000;
 }
+#mainform{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+
+
+}
+form {
+  max-width: 600px;
+    margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #00cc00;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+form button:hover {
+  background-color: #00aa00;
+}
+#endereco{
+    display: flex;
+    flex-direction: column;
+
+}

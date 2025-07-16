@@ -1,0 +1,15 @@
+ const cidadesPorEstado = {
+    SP: ["São Paulo", "Campinas", "Santos", "Sorocaba"],
+    MG: ["Belo Horizonte", "Uberlândia", "Contagem", "Juiz de Fora"],
+    RJ: ["Rio de Janeiro", "Niterói", "Nova Iguaçu"],
+    BA: ["Salvador", "Feira de Santana", "Vitória da Conquista"],
+    PE: ["Recife", "Olinda", "Petrolina"],
+    CE: ["Fortaleza", "Juazeiro do Norte", "Sobral"],
+    PR: ["Curitiba", "Londrina", "Maringá"],
+    RS: ["Porto Alegre", "Caxias do Sul", "Pelotas"],
+    GO: ["Goiânia", "Anápolis", "Rio Verde"],
+    DF: ["Brasília"],
+    SC: ["Florianópolis", "Joinville", "Blumenau"],
+    MT: ["Cuiabá", "Várzea Grande", "Rondonópolis"],
+    MA: ["São Luís", "Imperatriz", "Caxias"]
+  };
