@@ -13,3 +13,12 @@
     MT: ["Cuiabá", "Várzea Grande", "Rondonópolis"],
     MA: ["São Luís", "Imperatriz", "Caxias"]
   };
+  
+  function popularCidades(){
+    
+    const estadoSelect = document.getElementById = "estado"
+    const cidadeSelect = document.getElementById = "estado"
+    const estado = 
+  
+   
+  }
