@@ -571,7 +571,10 @@ form button:hover {
   background-color: #00aa00;
 }
 #endereco{
-    display: flex;
+    display: none;
     flex-direction: column;
 
+}
+#btn-voltar{
+    display: none;
 }

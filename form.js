@@ -14,11 +14,55 @@
     MA: ["São Luís", "Imperatriz", "Caxias"]
   };
   
-  function popularCidades(){
+ 
     
-    const estadoSelect = document.getElementById = "estado"
-    const cidadeSelect = document.getElementById = "estado"
-    const estado = 
+   const estadoSelect = document.getElementById('estado');
+    const cidadeSelect = document.getElementById ('cidade')
+
   
-   
-  }
+    estadoSelect.addEventListener('change', function()  {
+
+          const estadoSelecionado = this.value;
+      console.log(estadoSelecionado)
+        const cidades = cidadesPorEstado[estadoSelecionado] || []
+    
+      cidadeSelect.innerHTML ='<option value="">Selecione uma cidade</option>'
+      cidades.forEach(function (cidade){
+        const option = document.createElement('option')
+        option.value = cidade;
+        option.textContent = cidade
+        cidadeSelect.appendChild(option)
+      })
+
+
+
+
+
+    });
+
+    const buttonAvancar = document.getElementById('btn-avancar');
+    const buttonVoltar = document.getElementById('btn-voltar');
+    const endereco = document.getElementById('endereco')
+
+     const orcamento = document.getElementById('orcamento')
+
+    buttonAvancar.addEventListener('click', () =>{
+
+
+      
+      endereco.style.display ='flex'
+      orcamento.style.display ='none'
+      buttonVoltar.style.display ='block'
+
+
+
+    })
+      buttonVoltar.addEventListener('click', () =>{
+
+
+      
+      endereco.style.display ='none'
+      orcamento.style.display ='flex'
+
+
+    })
