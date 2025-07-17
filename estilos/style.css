@@ -530,15 +530,16 @@ footer{
 }
 #mainform{
 display: flex;
-flex-direction: row;
+flex-direction: column;
 align-items: center;
 justify-content: center;
+width: 100%;
+
 
 
 }
 form {
-  max-width: 600px;
-    margin-top: 70px;
+
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -570,11 +571,38 @@ form button {
 form button:hover {
   background-color: #00aa00;
 }
+#orcamento{
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 #endereco{
     display: none;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #02fd94;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
+}
+#btn-avancar{
+  
+     position: absolute;
+    top: 70%;
+    left: 60%;
+   
 }
 #btn-voltar{
     display: none;
+  
+     position: absolute;
+    top: 70%;
+    left: 40%;
+   
 }
