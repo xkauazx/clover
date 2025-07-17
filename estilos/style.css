@@ -529,11 +529,15 @@ footer{
     color: #000000;
 }
 #mainform{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-width: 100%;
+
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    position: absolute;
+    height: 100%;
 
 
 
@@ -557,52 +561,88 @@ form textarea {
   border-radius: 5px;
 }
 
-form button {
-  background-color: #00cc00;
+
+#secfull{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background-color:white;
+    position: absolute;
+    height: auto;
+    padding: 50px;
+    border-radius: 16px;
+    margin-top: 65px;
+    
+    
+}
+#orcamento{
+   
+    width: 100%;
+    max-width: 650px;
+    height: 100%;
+    max-height: 300px;
+    
+   
+   
+    border-radius: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    
+}
+#orcamento p {
+color: #525252;
+}
+#orcamento label {
+color: #a80f0f;
+margin: 20px 0px 0px 0px;
+}
+#endereco{
+    
+    width: 100%;
+    max-width: 650px;
+    height: 300px;
+   
+    
+    
+    border-radius: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+    flex-direction: column;
+
+}
+#btn-avancar{
+  
+   
+    padding: 10px;
+    width: 20%;
+    border-radius: 16px;
+    border: none;
+   
+    background-color: #4d4d4d;
   color: white;
-  padding: 12px;
+  
   border: none;
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s ease;
 }
-
-form button:hover {
-  background-color: #00aa00;
-}
-#orcamento{
-     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-#endereco{
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #02fd94;
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
-#btn-avancar{
-  
-     position: absolute;
-    top: 70%;
-    left: 60%;
-   
-}
 #btn-voltar{
-    display: none;
+     padding: 10px;
+    width: 20%;
+    border-radius: 16px;
+    border: none;
+   
+    background-color: #4d4d4d;
+  color: white;
   
-     position: absolute;
-    top: 70%;
-    left: 40%;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
    
 }
