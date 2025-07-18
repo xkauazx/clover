@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body {
        background-color: #e0e0e0;
 
@@ -12,24 +13,20 @@ body {
 
 #header-index {
 
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
 
-    box-shadow:
-        0 4px 15px rgba(0, 0, 0, 0.2),
-        /* Sombra externa */
-        inset 0 1px 2px rgba(255, 255, 255, 0.3);
-    /* Brilho interno */
-    ;
+   
     position: fixed;
     width: 100%;
     z-index: 1000;
+    
     
 }
 
 #nav-list {
     padding: 5px;
-    background-color: rgba(199, 199, 199, 0.281);
-
+    background-color: rgba(199, 199, 199, 0);
+    
 }
 
 #list-header {
@@ -45,6 +42,16 @@ body {
 #list-header li:first-child {
     margin-right: auto;
 }
+.hero-video{
+         
+ position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -9999; /* Vídeo fica atrás */
+}
 
 .item-list {
     font-weight: bold;
@@ -56,7 +63,7 @@ body {
 .item-list a {
     font-size: 17px;
     text-decoration: none;
-    color: black;
+    color: white;
 
 }
 
@@ -76,15 +83,31 @@ body {
     height: 100%;
 
 }
+@font-face {
+   font-family: 'Hertical Serif';
+  src: url('../font/Hertical-Serif.ttf') format('truetype');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
 
 #content-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+   
     height: 100%;
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    overflow: hidden;
     margin-bottom: 150px;
-
+    font-family: 'Hertical Serif', serif !important;
+     font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #sec-mi {
@@ -93,8 +116,10 @@ body {
     display: flex;
     margin-left: 30px;
     flex-direction: column;
-
+    justify-content: center;
     gap: 70px;
+   
+   
 
     height: 100%;
     width: 100%;
@@ -108,13 +133,13 @@ body {
 
 #sec-mi h1 {
     font-size: 50px;
-
+    color: white;
 
 }
 
 #sec-mi p {
     font-size: 25px;
-    color: #555;
+    color: #ffffff;
 
 
 }
