@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  <header id="header-index">
+  <header id="header-indexf">
     <nav id="nav-list">
       <ul id="list-header">
         <li class="item-list"><a href="index.html"><img src="img/logo.png" alt=""></a></li>
@@ -32,29 +32,21 @@
   </header>
   <main id="mainform">
     <section id="secfull">
-      <section id="orcamento">
+      <section id="orcamento" class="intercalar">
         <h2>Solicite um Orçamento</h2>
         <p>Preencha os dados abaixo e retornaremos o mais breve possível.</p>
         <form action="https://seu-servidor-ou-email-handler.com" method="post">
-          <label for="nome">Nome completo*</label>
+          <label for="nome">Nome completo</label>
           <input type="text" id="nome" name="nome" required>
-          <label for="email">E-mail*</label>
+          <label for="email">E-mail</label>
           <input type="email" id="email" name="email" required>
-          <label for="telefone">Telefone / WhatsApp*</label>
+          <label for="telefone">Telefone / WhatsApp</label>
           <input type="tel" id="telefone" name="telefone" required>
 
         </form>
       </section>
-      <section id="endereco">
-        <label for="servico">Tipo de serviço*</label>
-        <select id="servico" name="servico" required>
-          <option value="" disabled selected>Selecione...</option>
-          <option value="construcao">Construção Civil</option>
-          <option value="reforma">Reformas</option>
-          <option value="eletrico">Serviços Elétricos</option>
-          <option value="hidraulico">Serviços Hidráulicos</option>
-          <option value="outro">Outro</option>
-        </select>
+      <section id="endereco" class="intercalar">
+        
         <label for="estado">Estado</label>
         <select name="estado" id="estado">
           <option value="">Selecione o estado</option>
@@ -78,14 +70,31 @@
           <option value="">Selecione o estado primeiro</option>
         </select>
 
-        <label for="mensagem">Descreva seu projeto*</label>
 
-        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+        <div style="display: flex; flex-direction: column;">
+
+          <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 20px;">
+            <div style="display: flex; flex-direction: column;  gap: 5px;"><label for="">CEP</label><input type="text" ></div>
+            <div style="display: flex; flex-direction: column;  gap: 5px;"><label for="Logradouro">Logradouro</label><input type="text"></div>
+            <div  style="display: flex; flex-direction: column;  gap: 5px; " ><label value="numero">Número</label><input type="text" style="width: 50%;"></div>
+          </div>
+          <div style="display: flex; flex-direction: row;  align-items: center; gap: 20px;">
+            <div  style="display: flex; flex-direction: column; gap: 5px; "><label for="complemento">Complemento</label><input type="text"></div>
+              <div  style="display: flex; flex-direction: column;   gap: 5px;"><label for="complemento">Bairro</label><input type="text"></div>
+          </div>
+          
+          
+        </div>
+      </section>
+      <section id="option-service "
+      class="intercalar">
+
+      <div>koke</div>
       </section>
       <div
         style="display: flex;  width: 100%; align-items: center; justify-content: center; gap: 30px;margin-top: 70px; flex-direction: row-reverse;">
-        <button id="btn-avancar" type="submit">Avançar</button>
-        <button id="btn-voltar" type="submit">Voltar</button>
+        <button id="btn-avancar" >Avançar</button>
+        <button id="btn-voltar" >Voltar</button>
       </div>
     </section>
 

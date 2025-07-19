@@ -21,14 +21,27 @@ body {
 
 }
 
+#header-indexf {
+    background: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: all 1s ease;
+
+
+
+}
+
 #nav-list {
     padding: 5px;
     background-color: rgba(0, 0, 0, 0);
 }
+
 #header-index.scrolled {
     background: white;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.568);
 }
+
 #header-index.scrolled #nav-list a {
     color: #000000;
     /* Cor escura quando o fundo é branco */
@@ -54,13 +67,13 @@ body {
     font-weight: bold;
     text-decoration: none;
     color: black;
-    font-family: "Instrument Serif", serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
 .item-list a {
-    font-size: 20px;
+    font-size: 17px;
     text-decoration: none;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     color: white;
@@ -125,7 +138,7 @@ body {
     z-index: -9999;
     /* Vídeo fica atrás */
 
-    filter: blur(5px)
+
 }
 
 #divtext {
@@ -133,12 +146,16 @@ body {
     font-weight: 400;
     font-style: normal;
     text-shadow: 1px 2px 1px rgb(0, 0, 0);
+    background-color: #615d591f;
+    width: 69%;
+    padding: 10px;
+    border-radius: 16px;
 }
 
 #sec-mi h1 {
-    font-size: 50px;
+    font-size: 60px;
     color: rgb(248, 248, 248);
-
+    font-weight: bold;
 }
 
 #sec-mi p {
@@ -559,6 +576,23 @@ footer {
     color: #000000;
 }
 
+#header-indexf {
+    background: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: all 1s ease;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.568);
+
+
+
+}
+
+#header-indexf>nav>ul>li>a {
+    color: #000000;
+    text-shadow: none;
+}
+
 #mainform {
 
     display: flex;
@@ -611,18 +645,15 @@ form textarea {
 }
 
 #orcamento {
-
     width: 100%;
     max-width: 650px;
     height: 100%;
     max-height: 300px;
-
-
-
     border-radius: 16px;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
+
 
 }
 
@@ -636,18 +667,28 @@ form textarea {
 }
 
 #endereco {
-
     width: 100%;
     max-width: 650px;
     height: 300px;
-
-
-
     border-radius: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    display: none;
+    
     flex-direction: column;
+    gap: 12px;
+}
 
+#endereco label {
+    color: #a80f0f;
+    margin: 20px 0px 0px 0px;
+    font-weight: bold;
+}
+
+#endereco select,
+#endereco input {
+    padding: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 #btn-avancar {
@@ -657,7 +698,7 @@ form textarea {
     width: 20%;
     border-radius: 16px;
     border: none;
-
+    margin-top: 20px;
     background-color: #4d4d4d;
     color: white;
 
@@ -673,6 +714,7 @@ form textarea {
     width: 20%;
     border-radius: 16px;
     border: none;
+    margin-top: 20px;
 
     background-color: #4d4d4d;
     color: white;
@@ -683,4 +725,11 @@ form textarea {
     cursor: pointer;
     transition: 0.3s ease;
 
+}
+
+#option-service{
+
+}
+.intercalar {
+   display: none;
 }

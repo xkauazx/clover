@@ -1,68 +1,76 @@
- const cidadesPorEstado = {
-    SP: ["São Paulo", "Campinas", "Santos", "Sorocaba"],
-    MG: ["Belo Horizonte", "Uberlândia", "Contagem", "Juiz de Fora"],
-    RJ: ["Rio de Janeiro", "Niterói", "Nova Iguaçu"],
-    BA: ["Salvador", "Feira de Santana", "Vitória da Conquista"],
-    PE: ["Recife", "Olinda", "Petrolina"],
-    CE: ["Fortaleza", "Juazeiro do Norte", "Sobral"],
-    PR: ["Curitiba", "Londrina", "Maringá"],
-    RS: ["Porto Alegre", "Caxias do Sul", "Pelotas"],
-    GO: ["Goiânia", "Anápolis", "Rio Verde"],
-    DF: ["Brasília"],
-    SC: ["Florianópolis", "Joinville", "Blumenau"],
-    MT: ["Cuiabá", "Várzea Grande", "Rondonópolis"],
-    MA: ["São Luís", "Imperatriz", "Caxias"]
-  };
-  
- 
-    
-   const estadoSelect = document.getElementById('estado');
-    const cidadeSelect = document.getElementById ('cidade')
-
-  
-    estadoSelect.addEventListener('change', function()  {
-
-          const estadoSelecionado = this.value;
-      console.log(estadoSelecionado)
-        const cidades = cidadesPorEstado[estadoSelecionado] || []
-    
-      cidadeSelect.innerHTML ='<option value="">Selecione uma cidade</option>'
-      cidades.forEach(function (cidade){
-        const option = document.createElement('option')
-        option.value = cidade;
-        option.textContent = cidade
-        cidadeSelect.appendChild(option)
-      })
+const cidadesPorEstado = {
+  SP: ["São Paulo", "Campinas", "Santos", "Sorocaba"],
+  MG: ["Belo Horizonte", "Uberlândia", "Contagem", "Juiz de Fora"],
+  RJ: ["Rio de Janeiro", "Niterói", "Nova Iguaçu"],
+  BA: ["Salvador", "Feira de Santana", "Vitória da Conquista"],
+  PE: ["Recife", "Olinda", "Petrolina"],
+  CE: ["Fortaleza", "Juazeiro do Norte", "Sobral"],
+  PR: ["Curitiba", "Londrina", "Maringá"],
+  RS: ["Porto Alegre", "Caxias do Sul", "Pelotas"],
+  GO: ["Goiânia", "Anápolis", "Rio Verde"],
+  DF: ["Brasília"],
+  SC: ["Florianópolis", "Joinville", "Blumenau"],
+  MT: ["Cuiabá", "Várzea Grande", "Rondonópolis"],
+  MA: ["São Luís", "Imperatriz", "Caxias"]
+};
 
 
 
+const estadoSelect = document.getElementById('estado');
+const cidadeSelect = document.getElementById('cidade')
 
 
+estadoSelect.addEventListener('change', function () {
+
+  const estadoSelecionado = this.value;
+  console.log(estadoSelecionado)
+  const cidades = cidadesPorEstado[estadoSelecionado] || []
+
+  cidadeSelect.innerHTML = '<option value="">Selecione uma cidade</option>'
+  cidades.forEach(function (cidade) {
+    const option = document.createElement('option')
+    option.value = cidade;
+    option.textContent = cidade
+    cidadeSelect.appendChild(option)
+  })
+
+
+
+
+
+});
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('.intercalar');
+  const btnVoltar = document.getElementById('btn-voltar');
+  const btnAvancar = document.getElementById('btn-avancar');
+  let currentSection = 0;
+
+  // Atualiza a exibição das sections e botões
+  function updateDisplay() {
+    sections.forEach((intercalar, index) => {
+   intercalar.style.display = index ===currentSection ? 'flex' : 'none';
     });
 
-    const buttonAvancar = document.getElementById('btn-avancar');
-    const buttonVoltar = document.getElementById('btn-voltar');
-    const endereco = document.getElementById('endereco')
+    btnVoltar.disabled = currentSection === 0;
+    btnAvancar.disabled = currentSection === sections.length - 1;
+  }
 
-     const orcamento = document.getElementById('orcamento')
+  // Evento do botão "Avançar"
+  btnAvancar.addEventListener('click', () => {
+    if (currentSection < sections.length - 1) {
+      currentSection++;
+      updateDisplay();
+    }
+  });
 
-    buttonAvancar.addEventListener('click', () =>{
-
-
-      
-      endereco.style.display ='flex'
-      orcamento.style.display ='none'
-      buttonVoltar.style.display ='block'
-
-
-
-    })
-      buttonVoltar.addEventListener('click', () =>{
-
-
-      
-      endereco.style.display ='none'
-      orcamento.style.display ='flex'
-
-
-    })
+  // Evento do botão "Voltar"
+  btnVoltar.addEventListener('click', () => {
+    if (currentSection > 0) {
+      currentSection--;
+      updateDisplay();
+    }
+  });
+});
