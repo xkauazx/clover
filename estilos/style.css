@@ -6,27 +6,33 @@
 
 
 body {
-       background-color: #e0e0e0;
+    background-color: #e0e0e0;
 
 }
 
 
 #header-index {
-
     background-color: rgba(255, 255, 255, 0);
-
-   
     position: fixed;
     width: 100%;
     z-index: 1000;
-    
-    
+    transition: all 1s ease;
+
+
 }
 
 #nav-list {
     padding: 5px;
-    background-color: rgba(199, 199, 199, 0);
-    
+    background-color: rgba(0, 0, 0, 0);
+}
+#header-index.scrolled {
+    background: white;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.568);
+}
+#header-index.scrolled #nav-list a {
+    color: #000000;
+    /* Cor escura quando o fundo é branco */
+    text-shadow: none;
 }
 
 #list-header {
@@ -36,33 +42,27 @@ body {
     padding: 5px 100px;
     list-style: none;
     width: 100%;
-    gap: 30px;
+    gap: 70px;
 }
 
 #list-header li:first-child {
     margin-right: auto;
 }
-.hero-video{
-         
- position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -9999; /* Vídeo fica atrás */
-}
+
 
 .item-list {
     font-weight: bold;
     text-decoration: none;
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .item-list a {
-    font-size: 17px;
+    font-size: 20px;
     text-decoration: none;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
     color: white;
 
 }
@@ -83,83 +83,73 @@ body {
     height: 100%;
 
 }
-@font-face {
-   font-family: 'Hertical Serif';
-  src: url('../font/Hertical-Serif.ttf') format('truetype');
-  font-display: swap;
-  font-weight: normal;
-  font-style: normal;
-}
+
 
 #content-main {
-   
-    height: 100%;
+
+
     width: 100%;
     position: relative;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-   
     overflow: hidden;
     margin-bottom: 150px;
-    font-family: 'Hertical Serif', serif !important;
-     font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
 }
 
 #sec-mi {
     flex: 1;
-    font-family: teko;
+
     display: flex;
     margin-left: 30px;
     flex-direction: column;
     justify-content: center;
     gap: 70px;
-   
-   
-
     height: 100%;
     width: 100%;
     padding: 50px;
-    
+
 
 
 }
 
-#divtext {}
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -9999;
+    /* Vídeo fica atrás */
+
+    filter: blur(5px)
+}
+
+#divtext {
+    font-family: "Tangerine", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 1px 2px 1px rgb(0, 0, 0);
+}
 
 #sec-mi h1 {
     font-size: 50px;
-    color: white;
+    color: rgb(248, 248, 248);
 
 }
 
 #sec-mi p {
-    font-size: 25px;
+    font-size: 50px;
     color: #ffffff;
 
 
 }
 
 
-     #btn-go {
-      background: #00e600;
-      color: white;
-      padding: 14px 28px;
-      font-weight: bold;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-      width: 35%;
-    }
 
-    #btn-go:hover {
-      background: #00cc00;
-    }
 
 
 
@@ -193,12 +183,12 @@ body {
     justify-content: center;
     border-radius: 16px;
     gap: 50px;
-   
+
 
 }
 
 #introducaopags {
-   
+
     flex: 1;
     display: flex;
     align-items: center;
@@ -389,7 +379,7 @@ body {
     justify-content: flex-start;
 
     align-items: center;
-   background-color: #ffffff;
+    background-color: #ffffff;
     padding: 0px 0px 10px 0px;
     border-radius: 9px;
     box-shadow: 1px 2px 5px rgba(177, 176, 176, 0.356);
@@ -433,34 +423,37 @@ body {
     font-size: 13px;
 
 }
-#maps{
-    
+
+#maps {
+
 
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-   text-align: justify;
+    text-align: justify;
     width: 92%;
     background-color: #ffffff75;
     padding: 60px;
     justify-content: center;
     border-radius: 16px;
     gap: 50px;
-     
-    
+
+
 }
 
-#mapstext >  div > h1{
+#mapstext>div>h1 {
     font-size: 30px;
 
     font-family: Arial, Helvetica, sans-serif;
 
 }
-.fa-location-dot{
+
+.fa-location-dot {
     font-size: 50px;
     color: red;
 }
-#mapstext{
+
+#mapstext {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -468,35 +461,39 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 
 }
-#mapsimg{
+
+#mapsimg {
     display: flex;
     flex-direction: column;
     flex: 2.5;
     width: 100%;
 }
-#maps > div > img {
+
+#maps>div>img {
 
     width: 100%;
     max-width: 600px;
     height: auto;
     margin-left: 200px;
 }
+
 .botao-orcamento {
-  padding: 10px 20px;
-  background-color: #e60000;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: 0.3s;
-  margin-top: 50px;
+    padding: 10px 20px;
+    background-color: #e60000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 50px;
 }
 
 .botao-orcamento:hover {
-  background-color: #c40000;
+    background-color: #c40000;
 }
-footer{
+
+footer {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -511,51 +508,60 @@ footer{
     margin-bottom: 100px;
     border-radius: 16px;
 }
-.footerc{
+
+.footerc {
     width: 100%;
-    flex:1;
+    flex: 1;
 }
-.footerc > ul{
+
+.footerc>ul {
 
     list-style: none;
     display: flex;
     flex-direction: column;
-   gap: 10px;
-} 
-.footerc > ul > li{
+    gap: 10px;
+}
 
-  color: #525252;
-  cursor: pointer;
-} 
-.footer-container{
+.footerc>ul>li {
+
+    color: #525252;
+    cursor: pointer;
+}
+
+.footer-container {
     display: flex;
     flex-direction: row;
     gap: 100px;
 }
-.footer-container > div > h4{
+
+.footer-container>div>h4 {
     color: rgb(0, 0, 0);
     margin-bottom: 20px;
-    
+
 }
-.footer-container > div > p{
-     color: #525252;
+
+.footer-container>div>p {
+    color: #525252;
     margin-bottom: 20px;
 }
-.bottom{
+
+.bottom {
     display: flex;
     flex-direction: row;
     gap: 30px;
     align-items: center;
     justify-content: center;
-    
+
 }
-.bottom > a{
+
+.bottom>a {
     text-decoration: none;
     color: #000000;
 }
-#mainform{
 
-  display: flex;
+#mainform {
+
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -567,107 +573,114 @@ footer{
 
 
 }
+
 form {
 
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 form label {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 form input,
 form select,
 form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 
-#secfull{
+#secfull {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 50%;
-    background-color:white;
+    background-color: white;
     position: absolute;
     height: auto;
     padding: 50px;
     border-radius: 16px;
     margin-top: 65px;
-    
-    
+
+
 }
-#orcamento{
-   
+
+#orcamento {
+
     width: 100%;
     max-width: 650px;
     height: 100%;
     max-height: 300px;
-    
-   
-   
+
+
+
     border-radius: 16px;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-    
+
 }
+
 #orcamento p {
-color: #525252;
+    color: #525252;
 }
+
 #orcamento label {
-color: #a80f0f;
-margin: 20px 0px 0px 0px;
+    color: #a80f0f;
+    margin: 20px 0px 0px 0px;
 }
-#endereco{
-    
+
+#endereco {
+
     width: 100%;
     max-width: 650px;
     height: 300px;
-   
-    
-    
+
+
+
     border-radius: 16px;
     font-family: Arial, Helvetica, sans-serif;
     display: none;
     flex-direction: column;
 
 }
-#btn-avancar{
-  
-   
+
+#btn-avancar {
+
+
     padding: 10px;
     width: 20%;
     border-radius: 16px;
     border: none;
-   
+
     background-color: #4d4d4d;
-  color: white;
-  
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s ease;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
-#btn-voltar{
-     padding: 10px;
+
+#btn-voltar {
+    padding: 10px;
     width: 20%;
     border-radius: 16px;
     border: none;
-   
+
     background-color: #4d4d4d;
-  color: white;
-  
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s ease;
-   
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+
 }
