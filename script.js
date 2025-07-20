@@ -1,4 +1,5 @@
 
+
 const header = document.getElementById('header-index');
 const observer = new IntersectionObserver(
   (entries) => {
@@ -22,7 +23,7 @@ if (heroSection) {
 const seletor = document.getElementById("seletor-categorias");
 const servicos = document.querySelectorAll(".serviço");
 
-// Função para filtrar os serviços
+
 function filtrarServicos() {
   const categoriaSelecionada = seletor.value;
 
@@ -39,8 +40,8 @@ function filtrarServicos() {
 
 document.addEventListener("DOMContentLoaded", () => {
   seletor.value = "construcao"; 
-  filtrarServicos(); // Filtra os serviços 
+  filtrarServicos();
 });
 
-// eventos de  mudanças futuras
+
 seletor.addEventListener("change", filtrarServicos);
