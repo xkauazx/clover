@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
+    <div class="particles" id="particles-js"></div>
     <header id="header-index">
         <nav id="nav-list">
             <ul id="list-header">
@@ -32,17 +33,18 @@
                 <div id="divtext">
                     <h1>Especialistas em Construções, Reformas e Reparos</h1>
                     <div style="display: flex; flex-direction: row; gap: 10px;">
-                        <p>Seu problema é o nosso <span style="color: rgb(255, 0, 0) ;text-shadow: 1px 1px 1px black;">problema</span></p>
-                       
+                        <p>Seu problema é o nosso <span
+                                style="color: rgb(255, 0, 0) ;text-shadow: 1px 1px 1px black;">problema</span></p>
+
                     </div>
-                  
+
                 </div>
-                
+
             </section>
-        <video class="hero-video" autoplay muted loop>
-                    <source src="img/6473920-hd_1920_1080_25fps.mp4" type="video/mp4">
-                </video>
-                
+            <video class="hero-video" autoplay muted loop>
+                <source src="img/6473920-hd_1920_1080_25fps.mp4" type="video/mp4">
+            </video>
+
 
         </div>
 
@@ -169,8 +171,7 @@
 
                         </a>
                     </div>
-                    <div class="serviçocss"><a href="form.html"
-                            style="text-decoration: none;">
+                    <div class="serviçocss"><a href="form.html" style="text-decoration: none;">
                             <img src="img/gesso.jpg" alt="gesso">
                             <h1>Instalação de gesso/drywall</h1>
                             <p style="color:  rgb(46, 46, 46); font-size: 17px;"><strong>R$ 70 – R$ 120/m²</strong></p>
@@ -216,8 +217,7 @@
                                 (371 Avaliações)
                             </p>
                         </a></div>
-                    <div class="serviçocss"><a href="form.html"
-                            style="text-decoration: none;">
+                    <div class="serviçocss"><a href="form.html" style="text-decoration: none;">
                             <img src="img/ventilador.jpg" alt="ventilador">
                             <h1>Instalação de ventiladores de teto</h1>
                             <p style="color:  rgb(46, 46, 46); font-size: 17px;"><strong>R$ 150 – R$
@@ -227,8 +227,7 @@
                                 (725 Avaliações)
                             </p>
                         </a></div>
-                    <div class="serviçocss"><a href="form.html"
-                            style="text-decoration: none;">
+                    <div class="serviçocss"><a href="form.html" style="text-decoration: none;">
                             <img src="img/disjuntor.jpg" alt="disjuntores">
                             <h1>Troca de disjuntores e quadros</h1>
                             <p style="color:  rgb(46, 46, 46); font-size: 17px;"><strong>R$ 200 – R$ 600</strong></p>
@@ -411,10 +410,11 @@
                     Nossa atuação nacional reforça o compromisso com um atendimento eficiente, personalizado e voltado à
                     excelência, garantindo que nossos serviços cheguem cada vez mais longe, com a mesma confiança e
                     profissionalismo.</p>
-                <button type="button" class="botao-orcamento" onclick="window.location.href='form.html'">Orçamento</button>
+                <button type="button" class="botao-orcamento"
+                    onclick="window.location.href='form.html'">Orçamento</button>
             </div>
             <div id="mapsimg"><img src="img/Sem títulor.png" alt=""></div>
-            
+
         </section>
         <section id="achievements">
 
@@ -436,61 +436,112 @@
                 </p>
             </div>
         </section>
+        <section id="duvida">
+            <div id="first-container">
+                <img src="img/200090fd-4ecd-4139-b165-e5d2b37c7e96.png" alt="">
+            </div>
+            <div id="second-container">
+                <div>
+                    <h1>Como Funciona</h1>
+                    <p>Contratar um serviço nunca foi tão fácil! No nosso site, você encontra uma variedade de profissionais
+                        qualificados para resolver sua necessidade, desde pequenos reparos até grandes reformas. Veja como é
+                        simples:</p>
+                </div>
+
+                <div class="passo">
+                    <h2><span>1.</span> Escolha o Serviço</h2>
+                    <p>Navegue pelos serviços disponíveis e selecione aquele que melhor atende à sua demanda. Temos
+                        opções para construção, reformas, elétrica, hidráulica, limpeza e muito mais.</p>
+                </div>
+
+                <div class="passo">
+                    <h2><span>2.</span> Preencha o Formulário</h2>
+                    <p>Ao selecionar o serviço, você será direcionado para uma página segura, onde informará:</p>
+                    <ul>
+                        <li><strong>Seus dados pessoais</strong> (nome, telefone, e-mail)</li>
+                        <li><strong>Endereço</strong> do local onde o serviço será realizado</li>
+                        <li><strong>Detalhes do serviço</strong> (opcional, para orientar nossa equipe)</li>
+                    </ul>
+                </div>
+
+                <div class="passo">
+                    <h2><span>3.</span> Receba o Contato da Nossa Equipe</h2>
+                    <p>Assim que recebermos sua solicitação, entraremos em contato para confirmar os detalhes, tirar
+                        dúvidas e agendar o serviço no melhor horário para você.</p>
+                </div>
+
+                <div class="passo">
+                    <h2><span>4.</span> Serviço Realizado com Qualidade</h2>
+                    <p>Nossos profissionais são especializados e comprometidos com a excelência. Garantimos um trabalho
+                        bem executado, dentro do prazo e do orçamento combinado.</p>
+                </div>
+
+                <h2>Por Que Escolher Nosso Site?</h2>
+
+
+                <p>Precisa de ajuda? Nossa equipe está à disposição para esclarecer dúvidas e garantir a melhor
+                    experiência para você. <strong>Contrate com tranquilidade e tenha o serviço perfeito para o seu
+                        lar!</strong></p>
+
+
+            </div>
+
+        </section>
 
     </main>
     <footer>
-  <div class="footer-container">
-    <div class="footercontact">
-      <h4>Entre em contato</h4>
-      <p>clover@gmail.com<br>+55 11 984765-4321</p>
-    </div>
+        <div class="footer-container">
+            <div class="footercontact">
+                <h4>Entre em contato</h4>
+                <p>clover@gmail.com<br>+55 11 984765-4321</p>
+            </div>
 
-    <div class="footerc services">
-      <h4>Serviços</h4>
-      <ul>
-        <li>Construção Civil</li>
-        <li>Reformas</li>
-        <li>Serviços Elétricos</li>
-        <li>Serviços Hidráulicos</li>
-        <li>Segurança e Acessórios</li>
-        <li>Limpeza e Manutenção</li>
-        <li>Montagem</li>
-        <li>Climatização</li>
-        <li>Serviços Gerais</li>
-      </ul>
-    </div>
+            <div class="footerc services">
+                <h4>Serviços</h4>
+                <ul>
+                    <li>Construção Civil</li>
+                    <li>Reformas</li>
+                    <li>Serviços Elétricos</li>
+                    <li>Serviços Hidráulicos</li>
+                    <li>Segurança e Acessórios</li>
+                    <li>Limpeza e Manutenção</li>
+                    <li>Montagem</li>
+                    <li>Climatização</li>
+                    <li>Serviços Gerais</li>
+                </ul>
+            </div>
 
-    <div class="footerc recursos">
-      <h4>Recursos</h4>
-      <ul>
-        <li>Casos</li>
-        <li>Blog</li>
-        <li>Boletim informativo</li>
-      </ul>
-    </div>
+            <div class="footerc recursos">
+                <h4>Recursos</h4>
+                <ul>
+                    <li>Casos</li>
+                    <li>Blog</li>
+                    <li>Boletim informativo</li>
+                </ul>
+            </div>
 
-    <div class="footerc company">
-      <h4>Companhia</h4>
-      <ul>
-        <li>Sobre</li>
-        <li>Carreiras</li>
-        <li>Contato</li>
-      </ul>
-    </div>
-  </div>
-  <hr style="color: black; width: 95%;">
+            <div class="footerc company">
+                <h4>Companhia</h4>
+                <ul>
+                    <li>Sobre</li>
+                    <li>Carreiras</li>
+                    <li>Contato</li>
+                </ul>
+            </div>
+        </div>
+        <hr style="color: black; width: 95%;">
 
-  <div class="footerc bottom">
-    <p style="color: rgb(0, 0, 0);">© 2025 Clover</p>
-    <a href="#">Política de privacidade</a>
-    <a href="#">Termos e Condições</a>
-    
-    <div class="social-icons">
-      <a href="#"><img src="img/icons8-instagram-logo-30 (1).png" alt="Instagram"></a>
-      <a href="#"><img src="img/icons8-linkedin-30.png" alt="LinkedIn"></a>
-    </div>
-  </div>
-</footer>
+        <div class="footerc bottom">
+            <p style="color: rgb(0, 0, 0);">© 2025 Clover</p>
+            <a href="#">Política de privacidade</a>
+            <a href="#">Termos e Condições</a>
+
+            <div class="social-icons">
+                <a href="#"><img src="img/icons8-instagram-logo-30 (1).png" alt="Instagram"></a>
+                <a href="#"><img src="img/icons8-linkedin-30.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="script.js"></script>

@@ -92,7 +92,9 @@ body {
 }
 
 #main-index {
-
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
     height: 100%;
 
 }
@@ -108,7 +110,7 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    margin-bottom: 150px;
+    
 
 }
 
@@ -312,7 +314,13 @@ body {
     flex-direction: row;
     gap: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 100px;
+    
+    margin: 0 auto;
+      width: 92%;
+    background-color: #ffffff75;
+    padding: 150px;
+    border-radius: 16px;
+
 
 }
 
@@ -330,6 +338,8 @@ body {
 
     color: #1ae000;
     font-size: 50px;
+   
+    
 
 }
 
@@ -732,4 +742,61 @@ form textarea {
 }
 .intercalar {
    display: none;
+}
+#duvida{
+    margin: 0 auto;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+     width: 92%;
+    background-color: #ffffff75;
+    padding: 60px;
+    border-radius: 16px;
+    gap: 50px;
+}
+#first-container{
+     flex: 1.5;
+}
+
+#first-container img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+   
+}
+
+#second-container{
+    flex: 3;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    gap: 15px;
+    flex-direction: column
+    
+ 
+}
+#second-container p{
+    color: rgb(82, 82, 82);
+    font-size: 18px;
+}
+.passo h2{
+    color: rgb(0, 0, 0);
+     font-size: 25px;
+
+}
+.passo span{
+    color: rgb(0, 0, 0);
+
+}
+.passo p{
+    color: rgb(82, 82, 82);
+    font-size: 18px;       
+    margin-top: 10px;
+
+}
+.passo ul{
+    list-style: none;
+    margin-top: 10px;
+    color: #3f3f3f;
 }

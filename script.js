@@ -45,3 +45,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 seletor.addEventListener("change", filtrarServicos);
+
