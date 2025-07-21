@@ -46,19 +46,31 @@ document.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('.intercalar');
   const btnVoltar = document.getElementById('btn-voltar');
   const btnAvancar = document.getElementById('btn-avancar');
+  const btnFinalizar = document.getElementById('btn-finalizar');
   let currentSection = 0;
 
-  // Atualiza a exibição das sections e botões
   function updateDisplay() {
-    sections.forEach((intercalar, index) => {
-   intercalar.style.display = index ===currentSection ? 'flex' : 'none';
+    
+    sections.forEach((section, index) => {
+      section.style.display = index === currentSection ? 'flex' : 'none';
     });
 
-    btnVoltar.disabled = currentSection === 0;
-    btnAvancar.disabled = currentSection === sections.length - 1;
+    // Controle dos botões
+    const isFirstSection = currentSection === 0;
+    const isThirdSection = currentSection === 2; 
+    const isFourthSection = currentSection === 3; 
+   
+    btnVoltar.classList.toggle('btn-none', isFirstSection || isFourthSection);
+
+  
+    btnAvancar.classList.toggle('btn-none', isThirdSection || isFourthSection);
+
+    
+    btnFinalizar.classList.toggle('btn-finalizar-on', isThirdSection);
+    btnFinalizar.classList.toggle('btn-none', !isThirdSection || isFourthSection);
   }
 
-  // Evento do botão "Avançar"
+ 
   btnAvancar.addEventListener('click', () => {
     if (currentSection < sections.length - 1) {
       currentSection++;
@@ -66,11 +78,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Evento do botão "Voltar"
   btnVoltar.addEventListener('click', () => {
     if (currentSection > 0) {
       currentSection--;
       updateDisplay();
     }
   });
+
+ 
+  btnFinalizar.addEventListener('click', (event) => {
+    event.preventDefault();
+    currentSection = 3; 
+    updateDisplay();
+  });
+
+  updateDisplay(); 
 });

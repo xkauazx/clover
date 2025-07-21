@@ -700,6 +700,38 @@ form textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+.intercalar {
+ width: 100%;
+    max-width: 650px;
+    height: 300px;
+    border-radius: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+
+}
+
+.intercalar label{
+ color: #a80f0f;
+    margin: 20px 0px 0px 0px;
+    font-weight: bold;
+
+
+}
+.intercalar select{
+     padding: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#mensagem{
+  border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 50%;
+    padding: 5px;
+}
 
 #btn-avancar {
 
@@ -737,12 +769,7 @@ form textarea {
 
 }
 
-#option-service{
 
-}
-.intercalar {
-   display: none;
-}
 #duvida{
     margin: 0 auto;
     margin-bottom: 100px;
@@ -799,4 +826,66 @@ form textarea {
     list-style: none;
     margin-top: 10px;
     color: #3f3f3f;
+}
+#option-service{
+
+
+}
+
+.btn-none{
+    display: none;
+}
+#btn-finalizar{
+    display: none;
+     padding: 10px;
+    width: 20%;
+    border-radius: 16px;
+    border: none;
+    margin-top: 20px;
+    background-color: #4d4d4d;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+.btn-finalizar-on{
+    display: block !important;
+}
+.sectionsoff{
+    display: none !important;
+}
+#service-completed{
+    display: none;
+ 
+}
+.service-completed-on{
+    display: flex;
+        width: 100%;
+    max-width: 650px;
+    height: 300px;
+    border-radius: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    flex-direction: column;
+    gap: 12px;
+}
+.btn-finalization-result{
+
+    padding: 10px;
+    width: 20%;
+    border-radius: 16px;
+    border: none;
+    margin-top: 20px;
+    background-color: #81ff2e;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
