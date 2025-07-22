@@ -1,0 +1,163 @@
+@charset "UTF-8";
+@media (max-width:  1350px){
+
+
+#sec-mi h1 {
+      font-size: clamp(2.5rem, 5vw, 3rem);
+    color: rgb(248, 248, 248);
+    font-weight: bold;
+    width: 100%;
+  
+}
+}
+@media (max-width:  1200px){
+
+  #first-container > img{
+   flex: none;
+   display: none;
+  }
+ 
+#duvida{
+  display: flex;
+  flex-direction: column;
+ text-align: center;
+ justify-content: center;
+ 
+}
+#second-container{
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+   flex: none;
+   gap: 50px;
+
+}
+#second-container > div > h1 , h2{
+  margin-bottom: 30px;
+}
+
+
+}
+
+@media (max-width:  1000px){
+
+  #secpags{
+    flex-direction: column;
+  }
+
+  #maps{
+  flex-direction: column;
+  
+}
+  .botao-orcamento{
+    width: 50%;
+    display: none;
+  }
+   .botao-orcamento-2{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  #mapstext{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
+     #achievements{
+        gap: 100px;
+   flex-direction: column;
+   
+  }
+  #achievements>div {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+}
+
+
+@media  (max-width:  840px){
+    #nav-list{
+      
+        display: flex;
+       
+        
+       
+        
+    }
+    #list-header{
+         position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   display: none;
+      
+
+    }
+
+    #list-header.active{
+    display: flex;
+      
+
+    }
+    .item-list > a{
+
+       font-size: 25px;
+       color: rgb(255, 255, 255) !important;
+      
+    }
+    
+    #mobile-menu{
+        display: block;
+      
+       
+    }
+    #nav-list img {
+
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    
+   
+   
+
+
+}
+#container-logo{
+    display: flex;
+    gap: 300px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+
+
+
+
+}
+@media  (max-width:  700px){
+  .categoria {
+   
+    flex-direction: column;
+  }
+}

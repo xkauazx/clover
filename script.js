@@ -20,6 +20,9 @@ if (heroSection) {
     header.classList.toggle('scrolled', window.scrollY > 50);
   });
 }
+
+
+
 const seletor = document.getElementById("seletor-categorias");
 const servicos = document.querySelectorAll(".serviço");
 
@@ -46,3 +49,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 seletor.addEventListener("change", filtrarServicos);
 
+
+const toggle = document.getElementById('mobile-menu');
+const menu = document.getElementById('list-header');
+const body = document.querySelector('body')
+const links = menu.querySelectorAll('a');
+
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('active');
+  document.body.classList.toggle('no-scroll'); // Se estiver usando scroll travado
+})
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    menu.classList.remove('active');
+    document.body.classList.remove('no-scroll');
+  });
+});

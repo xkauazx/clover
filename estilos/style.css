@@ -7,8 +7,14 @@
 
 body {
     background-color: #e0e0e0;
-
+  
+ 
+    
 }
+.no-scroll{
+overflow: hidden;
+}
+
 
 
 #header-index {
@@ -17,7 +23,7 @@ body {
     width: 100%;
     z-index: 1000;
     transition: all 1s ease;
-
+   
 
 }
 
@@ -33,8 +39,12 @@ body {
 }
 
 #nav-list {
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0);
+    padding: 13px;
+    background-color: rgba(192, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 #header-index.scrolled {
@@ -50,17 +60,15 @@ body {
 
 #list-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 5px 100px;
     list-style: none;
     width: 100%;
     gap: 70px;
+    justify-content: flex-end;
 }
 
-#list-header li:first-child {
-    margin-right: auto;
-}
+
 
 
 .item-list {
@@ -73,20 +81,22 @@ body {
 }
 
 .item-list a {
-    font-size: 17px;
+    font-size: 18px;
     text-decoration: none;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     color: white;
 
 }
 
-.item-list img {
+#nav-list img {
 
     width: 100%;
-    max-width: 130px;
+    max-width: 150px;
     height: auto;
     padding: 0;
     margin: 0;
+    margin-left: 100px;
+    
 
 
 }
@@ -118,14 +128,14 @@ body {
     flex: 1;
 
     display: flex;
-    margin-left: 30px;
+   
     flex-direction: column;
     justify-content: center;
     gap: 70px;
     height: 100%;
     width: 100%;
     padding: 50px;
-
+ 
 
 
 }
@@ -144,12 +154,13 @@ body {
 }
 
 #divtext {
+    
     font-family: "Tangerine", cursive;
     font-weight: 400;
     font-style: normal;
     text-shadow: 1px 2px 1px rgb(0, 0, 0);
-    background-color: #615d591f;
-    width: 69%;
+    
+  
     padding: 10px;
     border-radius: 16px;
 }
@@ -158,12 +169,14 @@ body {
     font-size: 60px;
     color: rgb(248, 248, 248);
     font-weight: bold;
+    margin-left: 20px;
+    
 }
 
 #sec-mi p {
     font-size: 50px;
     color: #ffffff;
-
+  margin-left: 20px;
 
 }
 
@@ -374,12 +387,19 @@ body {
 
 
 }
+.categoria-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #015822;
+}
 
 #serviços {
     display: flex;
     align-items: center;
-
+    justify-content: center;
     flex-direction: column;
+    margin: 0 auto;
 
 }
 
@@ -400,11 +420,12 @@ body {
 
 .serviçocss {
 
-
+    max-width:290px;
     min-height: 350px;
     flex-direction: column;
     justify-content: flex-start;
-
+    display: flex;
+    width: auto;
     align-items: center;
     background-color: #ffffff;
     padding: 0px 0px 10px 0px;
@@ -428,7 +449,8 @@ body {
 
 .serviçocss p {
     color: #555;
-    font-size: 15px;
+    font-size: 15px;    
+    margin-left: 10px;
 
 }
 
@@ -492,8 +514,12 @@ body {
 #mapsimg {
     display: flex;
     flex-direction: column;
-    flex: 2.5;
+    flex: 2;
     width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 #maps>div>img {
@@ -501,7 +527,8 @@ body {
     width: 100%;
     max-width: 600px;
     height: auto;
-    margin-left: 200px;
+    
+    
 }
 
 .botao-orcamento {
@@ -517,6 +544,22 @@ body {
 }
 
 .botao-orcamento:hover {
+    background-color: #c40000;
+}
+.botao-orcamento-2 {
+    padding: 10px 20px;
+    background-color: #e60000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 50px;
+    display: none;
+}
+
+.botao-orcamento-2:hover {
     background-color: #c40000;
 }
 
@@ -888,4 +931,16 @@ form textarea {
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s ease;
+}
+
+#mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+#mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    margin: 8px;
+
 }
