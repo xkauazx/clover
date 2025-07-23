@@ -17,7 +17,7 @@
 </head>
 
 <body class="no-scroll'">
-    <div class="particles" id="particles-js"></div>
+    
     <header id="header-index">
         <nav id="nav-list">
             <div id="container-logo">
@@ -96,7 +96,7 @@
 
 
         <section id="serviços">
-            <div style="position: relative; width: 100%; text-align: center;">
+            <div id="container-title-seletor">
                 <h1 id="title-disponiveis">Serviços Disponiveis</h1>
                 <select id="seletor-categorias">
                     <option value="construcao" selected>Construção Civil</option>
@@ -489,12 +489,12 @@
                         bem executado, dentro do prazo e do orçamento combinado.</p>
                 </div>
 
-                <h2>Por Que Escolher Nosso Site?</h2>
-
-
-                <p>Precisa de ajuda? Nossa equipe está à disposição para esclarecer dúvidas e garantir a melhor
-                    experiência para você. <strong>Contrate com tranquilidade e tenha o serviço perfeito para o seu
-                        lar!</strong></p>
+                <div class="passo">
+                    <h2>Por Que Escolher Nosso Site?</h2>
+                    <p>Precisa de ajuda? Nossa equipe está à disposição para esclarecer dúvidas e garantir a melhor
+                        experiência para você. <strong>Contrate com tranquilidade e tenha o serviço perfeito para o seu
+                            lar!</strong></p>
+                </div>
 
 
             </div>
@@ -504,14 +504,29 @@
     </main>
     <footer>
         <div class="footer-container">
-            <div class="footercontact">
-                <h4>Entre em contato</h4>
-                <p>clover@gmail.com<br>+55 11 984765-4321</p>
+            <div class="footercontact footerc">
+                <div class="title-and-button">
+                    <h4>Entre em contato</h4>
+                    <div class="container-button">
+                        <button data-lista="lista1" class="expandir">+</i></button>
+                        
+                    </div>
+                    
+                </div>
+                <p id="lista1">clover@gmail.com<br>+55 11 984765-4321</p>
             </div>
+            <hr class="hr-footer">
 
             <div class="footerc services">
-                <h4>Serviços</h4>
-                <ul>
+                <div class="title-and-button">
+                    <h4>Serviços</h4>
+                    <div class="container-button">
+                        <button data-lista="lista2" class="expandir">+</i></button>
+                        
+                    </div>
+                </div>
+                <hr class="hr-footer">
+                <ul  id="lista2">
                     <li>Construção Civil</li>
                     <li>Reformas</li>
                     <li>Serviços Elétricos</li>
@@ -523,26 +538,40 @@
                     <li>Serviços Gerais</li>
                 </ul>
             </div>
+            
 
             <div class="footerc recursos">
-                <h4>Recursos</h4>
-                <ul>
+                <div class="title-and-button">
+                    <h4>Recursos</h4>
+                    <div class="container-button">
+                        <button data-lista="lista3" class="expandir">+</i></button>
+                       
+                    </div>
+                </div>
+                <ul id="lista3">
                     <li>Casos</li>
                     <li>Blog</li>
                     <li>Boletim informativo</li>
                 </ul>
             </div>
+            <hr class="hr-footer">
 
             <div class="footerc company">
-                <h4>Companhia</h4>
-                <ul>
+                <div class="title-and-button">
+                    <h4>Companhia</h4>
+                    <div class="container-button">
+                        <button data-lista="lista4" class="expandir">+</i></button>
+                       
+                    </div>
+                </div>
+                <ul id="lista4">
                     <li>Sobre</li>
                     <li>Carreiras</li>
                     <li>Contato</li>
                 </ul>
             </div>
         </div>
-        <hr style="color: black; width: 95%;">
+        <hr  class="hr-footer2" style="color: black; width: 95%;">
 
         <div class="footerc bottom">
             <p style="color: rgb(0, 0, 0);">© 2025 Clover</p>

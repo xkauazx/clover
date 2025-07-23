@@ -65,3 +65,26 @@ links.forEach(link => {
     document.body.classList.remove('no-scroll');
   });
 });
+
+const btnExpandir = document.querySelectorAll('.expandir');
+
+
+btnExpandir.forEach((botao) => {
+botao.addEventListener('click', () =>{
+
+  const idLista =botao.getAttribute('data-lista');
+  const lista = document.getElementById(idLista);
+
+  if (lista.style.display === 'none'){
+    lista.style.display = 'flex'
+    botao.textContent = '-'
+  } else{
+    lista.style.display =  'none'
+    botao.textContent= '+'
+
+  }
+
+console.log('ola')
+
+});
+});
