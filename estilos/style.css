@@ -55,7 +55,7 @@ body {
 
 #header-index.scrolled #nav-list a {
     color: #000000;
-    /* Cor escura quando o fundo é branco */
+    
     text-shadow: none;
 }
 
@@ -375,26 +375,31 @@ body {
 }
 
 #container-title-seletor {
-    width: 100%;
-    display: flex;
-  flex-direction: column;
-  height: 300px; /* Altura do contêiner (ajuste conforme necessário) */
-  justify-content: space-between; /* Coloca o h1 no topo (centro) e o select no final */
+     display: flex;
+  justify-content: space-between; 
   align-items: center; 
+  width: 100%; 
+  position: relative; 
+  height: 300px;
+ 
 }
-#container-title-seletor{
-     margin: 0; /* Remove margens padrão do h1 */
+
+#container-title-seletor {
+    margin: 0;
 }
 
 #seletor-categorias {
 
-
-    width: 30%;
-    font-size: 15px;
+    text-align: center;
+    width: 25%;
+    font-size: clamp(0.5rem, 5vw, 1rem);
     font-family: Arial, Helvetica, sans-serif;
     border: 1px solid rgb(156, 156, 156);
     border-radius: 6px;
-
+     margin-left: auto;
+     margin-top: 200px;
+     margin-right: 100px;
+     padding: 5px;
 
 
 
@@ -414,6 +419,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+ 
 
 
 }
@@ -424,6 +430,12 @@ body {
     margin: 70px 0px 100px 0px;
     text-shadow: 2px 2px 2px rgb(255, 255, 255);
     font-size: 30px;
+    position: absolute; /* Remove o h1 do fluxo normal */
+  left: 50%; /* Posiciona no centro horizontal */
+  transform: translateX(-50%);
+ 
+  width: 100%;
+  text-align: center;
 }
 
 .categoria {
@@ -977,6 +989,7 @@ form textarea {
 #mobile-menu {
     display: none;
     cursor: pointer;
+    margin-right: 3z0px;
 }
 
 #mobile-menu div {
